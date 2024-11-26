@@ -1,0 +1,60 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+body{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.schedule{
+	width: 1500px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 8px;
+}
+.schedule-item{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 6px;
+	background-color: #f1f1f1;
+	border-radius: 6px;
+	cursor: pointer;
+	padding: 10px 30px;
+}
+.schedule-item:hover{
+	background-color: #e8e8e8;
+}
+.schedule-cell{
+	width: 200px;
+	text-align: right;
+}
+
+.schedule-graph {
+  display: none;
+  padding: 10px;
+  margin-top: 5px;
+}
+.schedule-graph.active {
+  display: block;
+}
+canvas {
+  width: 100%;
+  height: 150px;
+}
+.yesterday {
+	display: flex;
+	justify-content: right;
+	gap: 30px;
+}
+.yesterday.positive {
+	color: green;
+}
+.yesterday.negative {
+  color: red;
+}

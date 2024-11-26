@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Revenue Schedule</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+	<div class="schedule">
+		<div class="schedule-item" style="background-color: #cdcdcd;">
+			<div class="schedule-cell">Показатель</div>
+			<div class="schedule-cell">Текущий день</div>
+			<div class="schedule-cell">Вчера</div>
+			<div class="schedule-cell">Этот день недели</div>
+		</div>
+
+		<div class="schedule-item">
+			<div class="schedule-cell" style="text-align: left;">Выручка руб.</div>
+			<div class="schedule-cell">500521</div>
+			<div class="schedule-cell yesterday">
+				<div>480521</div>
+				<div>4%</div>
+			</div>
+			<div class="schedule-cell">4805121</div>
+		</div>
+		<div class="schedule-graph">
+			<canvas></canvas>
+		</div>
+
+		<div class="schedule-item">
+			<div class="schedule-cell" style="text-align: left;">Наличные</div>
+			<div class="schedule-cell">300000</div>
+			<div class="schedule-cell yesterday">
+				<div>300000</div>
+				<div>0%</div>
+			</div>
+			<div class="schedule-cell">300000</div>
+		</div>
+		<div class="schedule-graph">
+			<canvas></canvas>
+		</div>
+
+		<div class="schedule-item">
+			<div class="schedule-cell" style="text-align: left;">Безналичный расчет</div>
+			<div class="schedule-cell">100000</div>
+			<div class="schedule-cell yesterday">
+				<div>100000</div>
+				<div>0%</div>
+			</div>
+			<div class="schedule-cell">100000</div>
+		</div>
+		<div class="schedule-graph">
+			<canvas></canvas>
+		</div>
+
+		<div class="schedule-item">
+			<div class="schedule-cell" style="text-align: left;">Кредитные карты</div>
+			<div class="schedule-cell">100521</div>
+			<div class="schedule-cell yesterday">
+				<div>100521</div>
+				<div>0%</div>
+			</div>
+			<div class="schedule-cell">100521</div>
+		</div>
+		<div class="schedule-graph">
+			<canvas></canvas>
+		</div>
+		<div class="schedule-item">
+			<div class="schedule-cell" style="text-align: left;">Средний чек. руб.</div>
+			<div class="schedule-cell">1300</div>
+			<div class="schedule-cell yesterday">
+				<div>900</div>
+				<div>44%</div>
+			</div>
+			<div class="schedule-cell">900</div>
+		</div>
+		<div class="schedule-graph">
+			<canvas></canvas>
+		</div>
+		<div class="schedule-item">
+			<div class="schedule-cell" style="text-align: left;">Средний гость руб.</div>
+			<div class="schedule-cell">1200</div>
+			<div class="schedule-cell yesterday">
+				<div>800</div>
+				<div>50%</div>
+			</div>
+			<div class="schedule-cell">800</div>
+		</div>
+		<div class="schedule-graph">
+			<canvas></canvas>
+		</div>
+		<div class="schedule-item">
+			<div class="schedule-cell" style="text-align: left;">Удаление из чека (после оплаты) руб.</div>
+			<div class="schedule-cell">1100</div>
+			<div class="schedule-cell yesterday">
+				<div>1100</div>
+				<div>-9%</div>
+			</div>
+			<div class="schedule-cell">500</div>
+		</div>
+		<div class="schedule-graph">
+			<canvas></canvas>
+		</div>
+		<div class="schedule-item">
+			<div class="schedule-cell" style="text-align: left;">Удаление из чека (до оплаты) руб.</div>
+			<div class="schedule-cell">1300</div>
+			<div class="schedule-cell yesterday">
+				<div>1300</div>
+				<div>0%</div>
+			</div>
+			<div class="schedule-cell">900</div>
+		</div>
+		<div class="schedule-graph">
+			<canvas></canvas>
+		</div>
+		<div class="schedule-item">
+			<div class="schedule-cell" style="text-align: left;">Количество чеков</div>
+			<div class="schedule-cell">34</div>
+			<div class="schedule-cell yesterday">
+				<div>36</div>
+				<div>-6%</div>
+			</div>
+			<div class="schedule-cell">34</div>
+		</div>
+		<div class="schedule-graph">
+			<canvas></canvas>
+		</div>
+		<div class="schedule-item">
+			<div class="schedule-cell" style="text-align: left;">Количество гостей</div>
+			<div class="schedule-cell">34</div>
+			<div class="schedule-cell yesterday">
+				<div>36</div>
+				<div>-6%</div>
+			</div>
+			<div class="schedule-cell">32</div>
+		</div>
+		<div class="schedule-graph">
+			<canvas></canvas>
+		</div>
+	</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
